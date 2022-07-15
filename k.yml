@@ -1,0 +1,20 @@
+---
+- students: 
+  - name: 
+    phone: 
+    add:
+     - door:
+     - street: 
+
+  - name:
+    phone:
+    add:
+     - door: 
+     - street:
+
+  - name:
+    phone:
+    add:
+     - door:
+     - street:
+

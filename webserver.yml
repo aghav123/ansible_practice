@@ -1,0 +1,17 @@
+--- 
+- hosts: all 
+  become: yes 
+  tasks: 
+   - name: i want to install webserver
+     apt: 
+      name: apache 
+      update_cache: yes
+      state: present
+
+   - name: i want to install git
+     apt:
+      name: git  
+      state: present 
+
+
+
