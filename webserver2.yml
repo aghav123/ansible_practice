@@ -2,8 +2,8 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: Install apache2
+  - name: Install git
     apt:
-     name: apache2
+     name: git
      state: present 
      when: ansible_os_family =="RedHat"
