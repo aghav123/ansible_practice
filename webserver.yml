@@ -8,13 +8,13 @@
       name: apache 
       update_cache: yes
       state: present
-      when: ansible_os_family =="Windows" 
+      when: ansible_facts['os_family'] == "RedHat"
 
    - name: i want to install git
      apt:
       name: git  
       state: present 
-      when: ansible_os_family =="Windows" 
+      when: ansible_facts['os_family'] == "RedHat"
 
 
 
