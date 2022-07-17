@@ -4,7 +4,7 @@
   tasks:
   - name: Creating a file with content
     copy:
-      dest: "/your path"
+      dest: "/home/karan/ansible_practice"
       content: 
         line 01
         line 02
