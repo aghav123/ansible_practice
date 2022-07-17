@@ -1,14 +1,9 @@
 --- 
-- 
-  apt: 
-    name: git
-    state: present
-    update_cache: true
-    when: "ansible_os_family ==\"RedHat\""
-  become: true
-  hosts: all
+- hosts: all 
+  become: yes
+  gather_facts: yes 
   tasks: 
-    - 
-      name: "Install git"
-
-  
+  - name: install git on ubuntu nodes
+    apt: 
+     name: git
+     state: present 
