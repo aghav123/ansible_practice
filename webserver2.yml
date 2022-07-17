@@ -1,5 +1,5 @@
 --- 
-- hosts: all 
+- hosts: mydbservers
   become: yes
   gather_facts: yes 
   tasks: 
