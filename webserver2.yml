@@ -2,9 +2,10 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: install git on ubuntu node
-    apt:
-     name: git
-     state: present 
-     when: ansible_distribution|string == 'Ubuntu'
+  - name: Install git
+  apt:
+    name: git
+    state: present
+    update_cache: yes
+    when: ansible_os_family =="RedHat"
   
