@@ -1,18 +1,19 @@
 --- 
 - hosts: all 
   become: yes 
+  gather_facts: yes
   tasks: 
-   - name: i want to install webserver
-     apt: 
+  - name: i want to install webserver
+    apt: 
       name: apache2
       state: present
-      when: ansible_os_family == "RedHat"
+    when: ansible_os_family == "RedHat"
 
-   - name: i want to install git
-     apt:
+  - name: i want to install git
+    apt:
       name: git  
       state: present 
-      when: ansible_os_family == "RedHat"
+    when: ansible_os_family == "RedHat"
 
 
 
