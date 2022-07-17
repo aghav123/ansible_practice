@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  tasks:
+  - name: Creating a file with content
+    copy:
+      dest: "/home/karan/ansible_practice"
+      content: 
+        line 01
+        line 02
+        line 03
