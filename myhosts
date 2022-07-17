@@ -1,2 +1,7 @@
 172.31.19.154
 
+[mydbservers]
+172.31.19.154
+
+[mydbservers:vars]
+k= git
