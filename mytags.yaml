@@ -1,19 +1,12 @@
 --- 
 - hosts: all 
-  become: yes 
-  gather_facts: yes
+  become: yes
+  gather_facts: yes 
   tasks: 
-  - name: i want to install webserver
+  - name: install git on ubuntu nodes
     apt: 
-      name: apache2
-      state: present
-    tags: myapache2
-
-  - name: install tree 
-    apt: 
-      name: tree 
-      state: present 
-    tags: mytree
-
+     name: git
+     state: present 
+    when: ansible_os_family =="RedHat"
  
  #tags
