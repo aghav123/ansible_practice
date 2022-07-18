@@ -7,6 +7,12 @@
     apt: 
       name: git
       state: present 
-    when: ansible_os_family =="RedHat"
+    tags: mygit
+
+  - name: install tree
+    apt: 
+      name: tree
+      state: present 
+    tags: mytree
  
  #tags
