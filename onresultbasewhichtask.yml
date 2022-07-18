@@ -3,11 +3,9 @@
   become: yes
   gather_facts: yes 
   tasks: 
-  - name: install git on ubuntu nodes
-    apt: 
-     name: git
-     state: present 
-     register: myvariable 
+  - name: execute cammand on linux
+    cammand: hostname -f 
+    register: myvariable 
 
   - name: i want to display first task result 
     debug:
