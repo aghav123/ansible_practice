@@ -14,10 +14,5 @@
       state: present 
       tags: mytree
 
-  - name: install apache2
-    apt: 
-      name: apache2
-      state: present 
-      tags: myapache2
-
-     #tags
+ 
+ #tags
