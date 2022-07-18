@@ -14,4 +14,5 @@
       name: tree
       statte: present 
     tags: mytree
+    ignore_errors: yes
  
