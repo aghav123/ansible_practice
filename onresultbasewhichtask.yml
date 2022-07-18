@@ -15,3 +15,5 @@
      name: git 
      state: present 
     when : myvariable.stderr!= ""
+
+#on basis of first task result we exe second task
