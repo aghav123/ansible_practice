@@ -9,3 +9,8 @@
   - name: i want to display first task result 
     debug:
        msg: "{{myvariable}}"
+
+  - name: install Git 
+    apt: 
+     name: git 
+     state: present 
