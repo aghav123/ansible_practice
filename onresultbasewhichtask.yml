@@ -1,0 +1,14 @@
+--- 
+- hosts: 172.31.19.154
+  become: yes
+  gather_facts: yes 
+  tasks: 
+  - name: install git on ubuntu nodes
+    apt: 
+     name: git
+     state: present 
+     register: myvariable 
+
+  - name: i want to display first task result 
+    debug:
+    msg: "{{myvariable}}"
