@@ -4,20 +4,20 @@
   tasks: 
   - name: install git
     apt: 
-     name: git 
-     state: present 
-     tags: mygit
+      name: git 
+      state: present 
+      tags: mygit
 
   - name: install tree 
     apt: 
-     name: tree 
-     state: present 
-     tags: mytree
+      name: tree 
+      state: present 
+      tags: mytree
 
   - name: install apache2
     apt: 
-     name: apache2
-     state: present 
-     tags: myapache2
+      name: apache2
+      state: present 
+      tags: myapache2
 
      #tags
