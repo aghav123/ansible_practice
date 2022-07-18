@@ -1,7 +1,4 @@
----
-- hosts: all
-  become: yes
-  tasks:
+
   - name: Creating a file with content
     file:
        path: /home/ubuntu/testfile
