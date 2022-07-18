@@ -3,8 +3,6 @@
 - hosts: all
   tasks:
   - name: Creating a file with content
-    copy:
-      dest: "/home/karan/ansible_practice"
-      content: 
-        line 01
-        line 02
+    file:
+       path: /home/ubuntu/testfile
+       state: touch 

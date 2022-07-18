@@ -15,4 +15,7 @@
       statte: present 
     tags: mytree
     ignore_errors: yes
+
+    #if any error occur in any task but dont find sol.
+    #bt exe remaining task ignore instead of failed
  
