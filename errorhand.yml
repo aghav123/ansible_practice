@@ -12,8 +12,6 @@
   - name: install tree
     apt: 
       name: tree
-      state: present 
+      statte: present 
     tags: mytree
  
- #tags from tag name we select which task should run and which not
- #ansible-playbook -i myhosts mytags.yml --tags="mygit,mytree"
