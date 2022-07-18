@@ -9,4 +9,4 @@
 
   - name: i want to display first task result 
     debug:
-     msg: "{{myvariable}}"
+       msg: "{{myvariable}}"
