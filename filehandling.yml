@@ -2,4 +2,4 @@
 - hosts: 172.31.19.154
   become: yes
   tasks: 
-  - include_tasks: createfile.yml
+   include_tasks: createfile.yml
