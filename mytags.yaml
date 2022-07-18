@@ -1,12 +1,13 @@
 --- 
-- hosts: 172.31.19.154
-  become: yes
+- hosts: all 
+  become: yes 
+  gather_facts: yes
   tasks: 
-  - name: install git
+  - name: i want to install webserver
     apt: 
-      name: git 
-      state: present 
-    tags: mygit
+      name: apache2
+      state: present
+    tags: myapache2
 
   - name: install tree 
     apt: 
