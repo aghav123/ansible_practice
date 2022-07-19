@@ -9,10 +9,10 @@
        src: index.txt
        dest: /home/karan/
 
-  - name: copy index.txt on node and show dynamic value
-    template:
-       src: index2.j2
-       dest: /var/www/html/index.txt
-
+  - name: download remote file (from internet)
+    get_url: 
+       url: https://get.jenkins.io/war-stable/2.346.2/jenkins.war
+       dest: /home/ubuntu/jenkins.war
+       force_basic_auth: yes
      
 
