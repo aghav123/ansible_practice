@@ -12,7 +12,7 @@
   - name: copy index.txt on node and show dynamic value
     template:
        src: index2.j2
-       dest: /var/www/html/index2.
+       dest: /var/www/html/index.txt
 
      
 
