@@ -1,0 +1,18 @@
+--- 
+- hosts: all 
+  become: yes
+  gather_facts: yes 
+  tasks: 
+  - include_tasks: createfile.yml
+  - name: copy index.txt on node
+    copy:
+       src: index.txt
+       dest: /home/karan/
+
+  - name: copy index.txt on node and show dynamic value
+    template:
+       src: index2.j2
+       dest: /var/www/html/index2.
+
+     
+
